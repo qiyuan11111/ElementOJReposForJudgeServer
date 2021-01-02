@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER qiyuan
 RUN sed -i 's#http://archive.ubuntu.com/#http://mirrors.tuna.tsinghua.edu.cn/#' /etc/apt/sources.list;
 COPY tomcat/apache-tomcat-8.5.60/ /usr/local/apache-tomcat-8.5.60/
-COPY tomcat/OnlineJudge.war /usr/local/apache-tomcat-8.5.60/webapps/OnlineJudge.war
+COPY tomcat/JudgeServer.war /usr/local/apache-tomcat-8.5.60/webapps/JudgeServer.war
 COPY config/start.sh /usr/local/apache-tomcat-8.5.60/start.sh
 COPY judger/ /usr/lib/judger/
 RUN apt-get update --fix-missing && apt-get install -y libseccomp-dev openjdk-8-jdk gcc g++ --fix-missing \
