@@ -13,6 +13,7 @@ chmod 710 /judger/spj
 chmod 711 /test_case
 chmod 700 /test_case/in
 chmod 700 /test_case/user_out
+chown root:root /test_case/user_out
 
 mkdir -p /test_case/special
 chown compiler:code /test_case/special
