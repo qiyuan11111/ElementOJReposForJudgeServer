@@ -20,5 +20,5 @@ chown compiler:code /test_case/special
 chmod 711 /test_case/special
 
 chmod 700 /usr/lib/judger/libjudger.so
-/usr/local/apache-tomcat-8.5.60/bin/catalina.sh run
+/usr/local/apache-tomcat-8.5.69/bin/catalina.sh run
 /bin/bash
